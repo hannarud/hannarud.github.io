@@ -1,0 +1,15 @@
+---
+title: "Blog"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## November 12, 2016 - it all started today!
+
+> You're welcome to see my *Hello World!* statement in [20161112 - Hello cycloid!](20161112_cycloid.html)
+
+***
+
+With <i class="fa fa-heart-o"></i> from Hannarud

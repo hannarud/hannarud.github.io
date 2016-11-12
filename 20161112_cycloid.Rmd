@@ -1,0 +1,31 @@
+---
+title: "20161112 - Hello cycloid!"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+### Hello World!
+
+I decided to publish something easy & beautiful here. So you're welcome to see my magic cycloid! Meditate! <i class="fa fa-leaf"></i>
+
+```{r cycloid, echo=FALSE}
+library(cycloids)
+
+## Looks like a passion flower
+op <- par(mar = c(0,0,0,0), bg = "gray")
+plot.new()
+plot.window(asp = 1, xlim = c(-150, 150), ylim = c(-150, 150))
+z <- zykloid.scaleA(A = 90, a = 32, lambda = 1, Radius = 150, hypo = TRUE)
+lines(y ~ x, data = z, col = "lightblue", lwd = 2)
+for (ll in seq(2, 0.8, -0.4)) {
+    if (ll == 2) ccol <- "royalblue"
+    else         ccol <- "plum"
+    z <- zykloid(A = 90, a = 32, lambda = ll, hypo = TRUE, steps = 360, start = pi/2)
+    lines(y ~ x, data = z, col = ccol, lwd = 1)
+    } # for ll
+par(op)
+```
+
+BTW: This site was made today in an hour or two having in mind the idea and lovely [RMarkdown websites](http://rmarkdown.rstudio.com/rmarkdown_websites.html).

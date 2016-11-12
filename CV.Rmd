@@ -1,0 +1,5 @@
+---
+title: "CV"
+---
+
+As this page is still under development, you can just simply download pdf-version of my CV [directly from Bitbucket repo](https://bitbucket.org/hannarud/cv/raw/58b6456530c48cded9823b3929ee9056335606b6/cv_12.pdf).
