@@ -1,0 +1,19 @@
+---
+title: "20170131 - AV Data Science Learning Path"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Here we have a magic link to the path by itself (https://www.analyticsvidhya.com/blog/2017/01/the-most-comprehensive-data-science-learning-plan-for-2017/).
+
+I just decided to start from somewhere and took a [skilltest in Machine Learning](https://datahack.analyticsvidhya.com/contest/skilltest-machine-learning-2/). 20 points for me - fair enough as I do not think I'm good at it now. Highly recommended. Or at least revise the [answers to the problems of first skilltest in ML](https://www.analyticsvidhya.com/blog/2016/11/solution-for-skilltest-machine-learning-revealed/).
+
+After that I had to make an introductory presentation on TensorFlow for my colleagues (I think, this will appear in the blog as well) - that's why I needed some practical examples and went to Kaggle. Haven't been there for a long time. That was the best decision I ever could take. Now I own my TensorFlow example repo ([have a look at it](https://github.com/hannarud/kaggle-titanic-tensorflow)) and a [second-level profile on Kaggle](https://www.kaggle.com/hannarud) (hungry for more!).
+
+And yes! The main goal of this article was to present a huge & nice infographics of my learning path 2017 ([see on AV page](https://www.analyticsvidhya.com/blog/2017/01/learning-plan-2017-intermediates-data-science/))!
+
+### Wait a moment for the infographics to load!
+
+<center><img src="https://static.analyticsvidhya.com/wp-content/uploads/2017/01/28103101/infographic_Intermediates-2017-Plan2.jpg" alt="Infographics of my Data Science Learning Path 2017 brought by Analytics Vidhya" height="5371" width="1000"></center>

@@ -6,6 +6,12 @@ title: "Blog"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## January 31, 2017 - why not to follow AV Learning Path?
+
+> My beloved Data Sience resource [Analytics Vidhya](https://www.analyticsvidhya.com/) introduced a data science learning path for the whole 2017. There are three levels: Beginner, Transitioner and Intermediate and I found myself to be an Intermediate. So I decided to follow them in a year of study -- more details inside [20170131 - AV Data Science Learning Path](20170131_AV_learning_path.html)
+
+***
+
 ## November 12, 2016 - it all started today!
 
 > You're welcome to see my *Hello World!* statement in [20161112 - Hello cycloid!](20161112_cycloid.html)
