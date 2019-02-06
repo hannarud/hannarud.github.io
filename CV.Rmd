@@ -1,5 +1,199 @@
----
-title: "CV"
----
+Hanna Paulava
+============
 
-As this page is still under development, you can just simply view my cv as a [Markdown file](https://github.com/hannarud/cv/blob/master/markdown/resume.md) - but I'll upload html here soon!
+----
+
+> <hanna.v.paulava@gmail.com> • +375 (29) 566 50 01 • 26 years old\
+> Minsk, Belarus\
+> [LinkedIn](www.linkedin.com/in/hannarud)
+
+----
+
+>  Creativity can be boosted by mathematical exactness - I found this fact to be true while studying.\
+>  Since then I love Mathematics and like its harmony and making sense of many things in the world.\
+>  It's great to see, how the data that was a complete mess at first sight
+>  gives us some really interesting results!
+
+----
+
+Experience
+----------
+
+**[Teqniksoft](https://teqniksoft.com/)**, Data Analyst
+
+*January 2016 – present | Minsk, BY*
+
+* Text analysis;
+* Looking after databases;
+* Statistical inference;
+* Data cleaning.
+
+Short text containing the type of work done, results obtained,
+lessons learned and other remarks. Can also include links.
+
+**[Research Institute for Applied Problems of Mathematics and Informatics](http://apmi.bsu.by/)**, Assistant
+
+*October 2013 – December 2015 | BSU, Minsk, BY*
+
+* Research on autoregressive time series;
+* Working for big data laboratory;
+* Statistical analysis of social data (together with [InData Labs](https://indatalabs.com/));
+* Data cleaning;
+* Statistical inference.
+
+Also with a short description.
+
+**[EXADEL](https://www.exadel.com/)**, System QA Programmer
+
+*August 2012 – August 2013 | HTP, Minsk, BY*
+
+* Automated tests;
+* C on Linux;
+* Low-level software (OS).
+
+Technical Experience
+--------------------
+
+My Cool Side Project
+:   For items which don't have a clear time ordering, a definition
+    list can be used to have named items.
+
+    * These items can also contain lists, but you need to mind the
+      indentation levels in the markdown source.
+    * Second item.
+
+Open Source
+:   List open source contributions here, perhaps placing emphasis on
+    the project names, for example the **Linux Kernel**, where you
+    implemented multithreading over a long weekend, or **node.js**
+    (with [link](http://nodejs.org)) which was actually totally
+    your idea...
+
+Programming Languages
+:   **first-lang:** Here, we have an itemization, where we only want
+    to add descriptions to the first few items, but still want to
+    mention some others together at the end. A format that works well
+    here is a description list where the first few items have their
+    first word emphasized, and the last item contains the final few
+    emphasized terms. Notice the reasonably nice page break in the pdf
+    version, which wouldn't happen if we generated the pdf via html.
+
+:   **second-lang:** Description of your experience with second-lang,
+    perhaps again including a [link] [ref], this time placing the url
+    reference elsewhere in the document to reduce clutter (see source
+    file). 
+
+:   **obscure-but-impressive-lang:** We both know this one's pushing
+    it.
+
+:   Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
+
+[ref]: https://github.com/githubuser/superlongprojectname
+
+
+Skills
+----------------------------------------
+
+* Programming:
+
+     * **Active knowledge**: Python (NumPy, SciPy) • R (incl. graphics and Rmd) • \TeX\
+       Markdown • SQL;
+     * **Inactive knowledge**: C • C++ • HTML;
+     * **Familiar**: Java • Matlab.
+
+* Human Languages:
+
+     * Russian, Belarusian (native speaker);
+     * English (advanced).
+     * Want to learn: Spanish, Polish, German.
+
+* Random tidbit
+
+* Other sort of impressive-sounding thing you did
+
+Education
+---------
+
+2015-2016
+:   **MSc, Applied Computer Data Analysis**; Belarusian State University, Faculty of Applied Mathematics and Computer Science
+
+    Studies focused on Data Analysis. Scientific research on autoregressive time series.
+
+    *Thesis title*: Autoregressive time series observed under classification.
+
+2010-2015
+:   **BSc, Applied Mathematics**; Belarusian State University, Faculty of Applied Mathematics and Computer Science
+
+    Department of Mathematical Modelling and Data Analysis
+
+    *Finished with distinction.*
+
+Thesis Directions
+---------
+
+Graduate
+:   Time series analysis\
+    Autoregressive processes\
+    Statistical estimation of parameters\
+    Estimation using ML, MM\
+    Simulations (Python)\
+    Computer Graphics + Practicum (R)
+
+Undergraduate
+:   Time series analysis\
+    Autoregressive processes\
+    Statistical estimation of parameters\
+    Least Sqares\
+    Simulations (C, C++, Python)\
+    Computer Graphics + Practicum (Wolfram Mathematica, R)
+
+Research
+----------
+
+**[BSU | Mathematical Modelling and Data Analysis Dept.](https://fpmi.bsu.by/)**
+
+*Jan 2015 – Dec 2015 | BSU, Minsk, BY*
+
+Granted task on advanced time series models -- Autoregressive time series observed under classification.
+
+**[BSU | Mathematical Modelling and Data Analysis Department](https://fpmi.bsu.by/)**
+
+*Jan 2014 – Dec 2014 | BSU, Minsk, BY*
+
+Granted task on advanced time series models. Report is done.
+
+**[APMI Research Institute](http://apmi.bsu.by/)**, Applied Mathematics Lab
+
+*Jan 2013 – Dec 2013 | BSU, Minsk, BY*
+
+Worked on advanced time series analysis models and methods. Completed a granted task ``Statistical analysis of discrete time series and geospatial data''. Scientific adviser [Yu. S. Kharin](http://www.bsu.by/main.aspx?guid=82721). Report is done.
+
+Awards
+----------
+
+* 2015 -- **Gran Prix** -- FAMCS young scientiests contest;
+* 2015 -- **1st Prize** -- Republican contest of scientific works of students;
+* 2014 -- **Diploma**   -- Best report of section "Mathematics" (XVI Republican scientific conference of young scientists);
+* 2014 -- **2nd Prize** -- Republican contest of scientific works of students.
+
+Societies
+----------
+
+**2014 - pres.** -- National & Belarus Statistical Assotiation (member).
+
+Links
+----------------------------------------
+
+* Github: [hannarud](https://github.com/hannarud);
+* Bitbucket: [hannarud](https://bitbucket.org/hannarud/);
+* LinkedIn: [hannarud](https://www.linkedin.com/in/hannarud) (again :) );
+* Twitter: [ohannarud](https://twitter.com/ohannarud);
+* Research Gate: [Hanna Rudakouskaya](https://www.researchgate.net/profile/Hanna_Rudakouskaya);
+* Academia.edu: [Hanna Rudakouskaya](https://bsu.academia.edu/HannaRudakouskaya);
+* Stackowerflow careers: [Hanna Rudakouskaya](https://careers.stackoverflow.com/cv/employer/284151).
+
+----
+
+> <hanna.v.paulava@gmail.com> • +375 (29) 566 50 01\
+> Minsk, Belarus\
+> as of Jan, 2019
