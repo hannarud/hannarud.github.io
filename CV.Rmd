@@ -28,8 +28,80 @@ Experience
 * Statistical inference;
 * Data cleaning.
 
-Short text containing the type of work done, results obtained,
-lessons learned and other remarks. Can also include links.
+More on this position:
+
+April 2018 - Now
+:   Project under NDA, Data Scientist
+
+    * Responsibilities:
+    
+        * Creating deep learning models for image data of different sources;
+        * Bulding pipelines of image data processing with statistical methods;
+        * Fine-tuning famous deep learning moddels as well as developing custom pipelines;
+        * Results aggregation and presentation, documentation;
+        * Communicating with customer.
+    
+    * Toolbox & frameworks:
+    
+        * Python: TensorFlow, Keras, scikit-learn, opencv, plotly, numpy, pandas, jupyter;
+        * GPUs;
+        * TensorFlow Object detection API.
+
+February 2017 - April 2018
+:   Project under NDA, Data Scientist
+
+    * Responsibilities:
+    
+        * Data mining and data analysis of huge amounts of structured data with observations of different physical processes;
+        * Building and analyzing linear regression models, automatization of model building process, working with feature selection methods (backward & forward subset selection), model improvement;
+        * Working with huge imbalance samples in classification problem;
+        * Graphical analysis of data;
+        * Performing a full stack of data analysis procedures (get & clean data, evaluate and tune analysis, present results);
+        * Preparing a documentation framework;
+        * Automation of analysis and preparation of DA scripts sets;
+        * Data cleaning pipeline with advanced techniques;
+        * Communicating with customer.
+    
+    * Toolbox & frameworks:
+    
+        * R and Rstudio (data.table, dplyr, caret, xgboost, lm, ggplot2);
+        * SQL, Hive, Impala (through user interface), integrated database tool in R;
+        * Atlassian set of tools for project management (Jira, Bitbucket, Confluence);
+        * Python (IPython, pandas, xgboost).
+
+March 2016 - March 2017
+:   Project under NDA, Data Analyst
+
+    * Responsibilities:
+    
+        Sanity care & intelligent maintenance of databases. Development of integrated Data Analysis automatic reporting module. Data-driven research for future project’s needs. Including but not limited to:
+        
+        * Sanity care & intelligent maintenance of databases;
+        * Development of integrated Data Analysis automatic reporting module;
+        * Data-driven research for future project’s needs;
+        * Maintain the documentation on database design;
+        * Reporting on unusual data behavior and incorrect data usage;
+        * Constantly checking the correctness of data flow and integration;
+        * Communicating with customer.
+    
+    * Toolbox & frameworks:
+    
+        * •	R and Rstudio, MongoDB, Regular Expressions, server-side analytics, Jenkins, Linux, Cron (Linux daemon).
+
+January 2016- March 2016
+:   Project under NDA, Junior Data Analyst
+
+    * Responsibilities:
+    
+        Text mining improvements for project’s needs. Including but not limited to:
+        
+        * Communications with customer.
+        * Text mining using Regular Expressions.
+        * Text-specific patterns recognition.
+    
+    * Toolbox & frameworks:
+    
+        * •	R and Rstudio, Excel, regular expressions.
 
 **[Research Institute for Applied Problems of Mathematics and Informatics](http://apmi.bsu.by/)**, Assistant
 
@@ -39,9 +111,9 @@ lessons learned and other remarks. Can also include links.
 * Working for big data laboratory;
 * Statistical analysis of social data (together with [InData Labs](https://indatalabs.com/));
 * Data cleaning;
+* Simulations using C, C++, Python;
+* Real-data applications;
 * Statistical inference.
-
-Also with a short description.
 
 **[EXADEL](https://www.exadel.com/)**, System QA Programmer
 
@@ -51,65 +123,57 @@ Also with a short description.
 * C on Linux;
 * Low-level software (OS).
 
-Technical Experience
+Side prjects & Open Source
 --------------------
 
-My Cool Side Project
-:   For items which don't have a clear time ordering, a definition
-    list can be used to have named items.
+Autoranking
+:   Not-so-cool-side-project performed by me when necessary. A small framework for building rankings of children who run orienteering in Belarus.
 
-    * These items can also contain lists, but you need to mind the
-      indentation levels in the markdown source.
-    * Second item.
+    * Written on R with GoogleSheets as a database.
+    * Can be found under this [link](https://github.com/juniororienteeringblr/autoranking).
 
 Open Source
-:   List open source contributions here, perhaps placing emphasis on
-    the project names, for example the **Linux Kernel**, where you
-    implemented multithreading over a long weekend, or **node.js**
-    (with [link](http://nodejs.org)) which was actually totally
-    your idea...
-
-Programming Languages
-:   **first-lang:** Here, we have an itemization, where we only want
-    to add descriptions to the first few items, but still want to
-    mention some others together at the end. A format that works well
-    here is a description list where the first few items have their
-    first word emphasized, and the last item contains the final few
-    emphasized terms. Notice the reasonably nice page break in the pdf
-    version, which wouldn't happen if we generated the pdf via html.
-
-:   **second-lang:** Description of your experience with second-lang,
-    perhaps again including a [link] [ref], this time placing the url
-    reference elsewhere in the document to reduce clutter (see source
-    file). 
-
-:   **obscure-but-impressive-lang:** We both know this one's pushing
-    it.
-
-:   Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
-
-[ref]: https://github.com/githubuser/superlongprojectname
+:   Contributing to [OpenCV](https://github.com/opencv/opencv) and [Tensorflow models](https://github.com/tensorflow/models).
 
 
 Skills
 ----------------------------------------
 
-* Programming:
+* Technical:
 
-     * **Active knowledge**: Python (NumPy, SciPy) • R (incl. graphics and Rmd) • \TeX\
-       Markdown • SQL;
+     * **Active knowledge**: Python (NumPy, SciPy, scikit-learn, TensorFlow, Keras, opencv, matplotlib, plotly) • R (incl. base & ggplot graphics, Rmd, other popular RStudio team's packages) • \TeX\ • Markdown • SQL • MongoDB;
      * **Inactive knowledge**: C • C++ • HTML;
-     * **Familiar**: Java • Matlab.
+     * **Familiar**: Java • Matlab;
+     * **Know but prefer not to work with**: Statistica, Weka, Excel.
 
 * Human Languages:
 
      * Russian, Belarusian (native speaker);
-     * English (advanced).
+     * English (advanced);
      * Want to learn: Spanish, Polish, German.
 
-* Random tidbit
+* Other soft-skills:
 
-* Other sort of impressive-sounding thing you did
+     * Communicative and initiative;
+     * Responsible for myself and my team;
+     * Self-organized;
+     * Good at problem solving, use logic and creativity in order to find best solutions;
+     * Aim to solve the task, not to struggle with busy work;
+     * Ablo to work both as team player and independent player;
+     * Love to study and motivate myself!
+     * Yes, I'm intellgent :D
+
+* What I love to do:
+
+     * Data pipelines design;
+     * Communications on task statement;
+     * Data preparation to analysis (after the task statement is accomplished!);
+     * Automatized data analysis pipelines.
+
+* What I'm usually bad at:
+
+     * Final reporting (hard to stop exploring :( );
+     * Routines that are not automatized for a long time (they're simply boring!).
 
 Education
 ---------
@@ -127,6 +191,30 @@ Education
     Department of Mathematical Modelling and Data Analysis
 
     *Finished with distinction.*
+
+Self-Education
+---------
+
+2012
+:   **Coursera, edx, Kaggle**
+
+
+Mar, 2017 – now
+:   **OpenDataScience**; meetups & community work, ML Course in data science (http://mlcourse.ai/).
+
+    Department of Mathematical Modelling and Data Analysis
+
+    *Finished with distinction.*
+
+Mar, 2017 – now
+:   **Belarus Big Data User Group**
+
+    Attending and performing talks for Belarus Big Data User Group (https://www.facebook.com/groups/big.data.nerds.minsk/)
+
+Nov, 2017
+:   **CS231n**
+
+    Convolutional Neural Networks for Visual Recognition (http://cs231n.stanford.edu/).
 
 Thesis Directions
 ---------
