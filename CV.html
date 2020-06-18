@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title></title>
+<title>CV.utf8</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,7 +22,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -70,9 +71,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -86,13 +85,18 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -108,7 +112,6 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
-
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -128,6 +131,43 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -149,19 +189,74 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -245,7 +340,7 @@ $(document).ready(function () {
 <h1>Hanna Paulava</h1>
 <hr />
 <blockquote>
-<p><a href="mailto:hanna.v.paulava@gmail.com">hanna.v.paulava@gmail.com</a> • +375 (29) 566 50 01 • 26 years old<br />
+<p><a href="mailto:hanna.v.paulava@gmail.com" class="email">hanna.v.paulava@gmail.com</a> • +375 (29) 566 50 01 • 27 years old<br />
 Minsk, Belarus<br />
 <a href="www.linkedin.com/in/hannarud">LinkedIn</a></p>
 </blockquote>
@@ -261,10 +356,10 @@ It’s great to see, how the data that was a complete mess at first sight gives 
 <p><strong><a href="https://teqniksoft.com/">Teqniksoft</a></strong>, Data Analyst</p>
 <p><em>January 2016 – present | Minsk, BY</em></p>
 <ul>
-<li>Text analysis;</li>
-<li>Looking after databases;</li>
+<li>Data cleaning;</li>
 <li>Statistical inference;</li>
-<li>Data cleaning.</li>
+<li>Image processing;</li>
+<li>Deep learning.</li>
 </ul>
 <p>More on this position:</p>
 <dl>
@@ -273,8 +368,10 @@ It’s great to see, how the data that was a complete mess at first sight gives 
 <ul>
 <li><p>Responsibilities:</p>
 <ul>
-<li>Creating deep learning models for image data of different sources;</li>
+<li>Data preprocessing;</li>
+<li>Feature ingineering;</li>
 <li>Bulding pipelines of image data processing with statistical methods;</li>
+<li>Creating deep learning models for image data of different sources;</li>
 <li>Fine-tuning famous deep learning moddels as well as developing custom pipelines;</li>
 <li>Results aggregation and presentation, documentation;</li>
 <li>Communicating with customer.</li>
@@ -371,7 +468,7 @@ It’s great to see, how the data that was a complete mess at first sight gives 
 <h2>Side prjects &amp; Open Source</h2>
 <dl>
 <dt>Autoranking</dt>
-<dd><p>Not-so-cool-side-project performed by me when necessary. A small framework for building rankings of children who run proenteerign in Belarus.</p>
+<dd><p>Not-so-cool-side-project performed by me when necessary. A small framework for building rankings of children who run orienteering in Belarus.</p>
 <ul>
 <li>Written on R with GoogleSheets as a database.</li>
 <li>Can be found under this <a href="https://github.com/juniororienteeringblr/autoranking">link</a>.</li>
@@ -387,7 +484,7 @@ It’s great to see, how the data that was a complete mess at first sight gives 
 <ul>
 <li><p>Technical:</p>
 <ul>
-<li><strong>Active knowledge</strong>: Python (NumPy, SciPy, scikit-learn, TensorFlow, Keras, opencv, matplotlib, plotly) • R (incl. base &amp; ggplot graphics, Rmd, other popular RStudio team’s packages) •  • Markdown • SQL • MongoDB;</li>
+<li><strong>Active knowledge</strong>: Python (NumPy, SciPy, scikit-learn, TensorFlow, Keras, opencv, matplotlib, plotly) • R (incl. base &amp; ggplot graphics, Rmd, other popular RStudio team’s packages) •  • Markdown • SQL • MongoDB;</li>
 <li><strong>Inactive knowledge</strong>: C • C++ • HTML;</li>
 <li><strong>Familiar</strong>: Java • Matlab;</li>
 <li><strong>Know but prefer not to work with</strong>: Statistica, Weka, Excel.</li>
@@ -445,11 +542,9 @@ It’s great to see, how the data that was a complete mess at first sight gives 
 <dd><strong>Coursera, edx, Kaggle</strong>
 </dd>
 <dt>Mar, 2017 – now</dt>
-<dd><p><strong>OpenDataScience</strong>; meetups &amp; community work, ML Course in data science (<a href="http://mlcourse.ai/" class="uri">http://mlcourse.ai/</a>).</p>
-<p>Department of Mathematical Modelling and Data Analysis</p>
-<p><em>Finished with distinction.</em></p>
+<dd><strong>OpenDataScience</strong>; meetups &amp; community work, ML Course in data science (<a href="http://mlcourse.ai/" class="uri">http://mlcourse.ai/</a>).
 </dd>
-<dt>Mar, 2017 – now</dt>
+<dt>Mar, 2017 – 2019</dt>
 <dd><p><strong>Belarus Big Data User Group</strong></p>
 <p>Attending and performing talks for Belarus Big Data User Group (<a href="https://www.facebook.com/groups/big.data.nerds.minsk/" class="uri">https://www.facebook.com/groups/big.data.nerds.minsk/</a>)</p>
 </dd>
@@ -503,7 +598,7 @@ Computer Graphics + Practicum (Wolfram Mathematica, R)
 </div>
 <div id="societies" class="section level2">
 <h2>Societies</h2>
-<p><strong>2014 - pres.</strong> – National &amp; Belarus Statistical Assotiation (member).</p>
+<p><strong>2014 - 2016</strong> – National &amp; Belarus Statistical Assotiation (member).</p>
 </div>
 <div id="links" class="section level2">
 <h2>Links</h2>
@@ -518,9 +613,9 @@ Computer Graphics + Practicum (Wolfram Mathematica, R)
 </ul>
 <hr />
 <blockquote>
-<p><a href="mailto:hanna.v.paulava@gmail.com">hanna.v.paulava@gmail.com</a> • +375 (29) 566 50 01<br />
+<p><a href="mailto:hanna.v.paulava@gmail.com" class="email">hanna.v.paulava@gmail.com</a> • +375 (29) 566 50 01<br />
 Minsk, Belarus<br />
-as of Jan, 2019</p>
+as of Jun, 2020</p>
 </blockquote>
 </div>
 </div>
@@ -542,6 +637,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

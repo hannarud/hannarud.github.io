@@ -3,7 +3,7 @@ Hanna Paulava
 
 ----
 
-> <hanna.v.paulava@gmail.com> • +375 (29) 566 50 01 • 26 years old\
+> <hanna.v.paulava@gmail.com> • +375 (29) 566 50 01 • 27 years old\
 > Minsk, Belarus\
 > [LinkedIn](www.linkedin.com/in/hannarud)
 
@@ -23,10 +23,10 @@ Experience
 
 *January 2016 – present | Minsk, BY*
 
-* Text analysis;
-* Looking after databases;
+* Data cleaning;
 * Statistical inference;
-* Data cleaning.
+* Image processing;
+* Deep learning.
 
 More on this position:
 
@@ -35,8 +35,10 @@ April 2018 - Now
 
     * Responsibilities:
     
-        * Creating deep learning models for image data of different sources;
+        * Data preprocessing;
+        * Feature ingineering;
         * Bulding pipelines of image data processing with statistical methods;
+        * Creating deep learning models for image data of different sources;
         * Fine-tuning famous deep learning moddels as well as developing custom pipelines;
         * Results aggregation and presentation, documentation;
         * Communicating with customer.
@@ -202,11 +204,7 @@ Self-Education
 Mar, 2017 – now
 :   **OpenDataScience**; meetups & community work, ML Course in data science (http://mlcourse.ai/).
 
-    Department of Mathematical Modelling and Data Analysis
-
-    *Finished with distinction.*
-
-Mar, 2017 – now
+Mar, 2017 – 2019
 :   **Belarus Big Data User Group**
 
     Attending and performing talks for Belarus Big Data User Group (https://www.facebook.com/groups/big.data.nerds.minsk/)
@@ -267,7 +265,7 @@ Awards
 Societies
 ----------
 
-**2014 - pres.** -- National & Belarus Statistical Assotiation (member).
+**2014 - 2016** -- National & Belarus Statistical Assotiation (member).
 
 Links
 ----------------------------------------
@@ -284,4 +282,4 @@ Links
 
 > <hanna.v.paulava@gmail.com> • +375 (29) 566 50 01\
 > Minsk, Belarus\
-> as of Jan, 2019
+> as of Jun, 2020
