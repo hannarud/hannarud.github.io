@@ -16,4 +16,4 @@ And yes! The main goal of this article was to present a huge & nice infographics
 
 ### Wait a moment for the infographics to load!
 
-<center><img src="https://static.analyticsvidhya.com/wp-content/uploads/2017/01/28103101/infographic_Intermediates-2017-Plan2.jpg" alt="Infographics of my Data Science Learning Path 2017 brought by Analytics Vidhya" height="5371" width="1000"></center>
+<center><img src="infographic_Intermediates-2017-Plan2.jpg" alt="Infographics of my Data Science Learning Path 2017 brought by Analytics Vidhya" height="5371" width="1000"></center>

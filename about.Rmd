@@ -1,9 +1,0 @@
----
-title: "About This Website"
----
-
-This personal project aims to introduce me as a developer, researcher, provide some useful things I discovered through my journey in this crazy world.
-
-And yes, this page suits the most to host my serious photo <i class="fa fa-sun-o"></i>
-
-<center><img src="hannarud_intro_photo.png" alt="Some photo of mine. Hello!" style="width: 300px;"/></center>

@@ -32,7 +32,7 @@ Experience
 * Toolbox & frameworks:
 
     * Python: PyTorch, opencv, numpy, audio processing libraries
-    * MLOps: GCP, AWS, lambda, ansible, wandb, bash scripting - involving storage solutions, instances setup for ML flows
+    * MLOps: GCP, AWS, docker, lambda, ansible, wandb, bash scripting - involving storage solutions, instances setup for ML flows
     * Studying related works - open source libraries, arXiv articles, applying them in order to solve several use cases
     * JIRA, agile (partially as a scrum master), Notion, GitHub
 
@@ -198,6 +198,7 @@ January 2016- March 2016
 * C on Linux
 * Low-level software (OS).
 
+
 Side prjects & Open Source
 --------------------
 
@@ -214,18 +215,27 @@ Open Source
 Skills
 ----------------------------------------
 
-* Technical:
+* **Data Science**: Neural Networks, CNN, GAN, losses, hyperparameter tuning, autoencoders
+* **Data Analysis**: all the standard methods of supervised/unsupervised learning (regression, classification), outlier detection, data cleaning, time series analysis
 
-     * **Active knowledge**: Python (NumPy, SciPy, scikit-learn, TensorFlow, Keras, opencv, matplotlib, plotly) • R (incl. base & ggplot graphics, Rmd, other popular RStudio team's packages) • \TeX\ • Markdown • SQL • MongoDB
-     * **Inactive knowledge**: C • C++ • HTML
-     * **Familiar**: Java • Matlab
-     * **Know but prefer not to work with**: Statistica, Weka, Excel.
+* **Technical**:
+
+     * **Python**: NumPy, SciPy, scikit-learn, PyTorch, TensorFlow, Keras, Juoyter, opencv, matplotlib, plotly, librosa
+     * **MLOps**: GCP, AWS, docker, lambda, ansible, wandb, bash scripting - involving storage solutions, instances setup for ML flows
+     * **R**: incl. base & ggplot graphics, Rmd, other popular R packages
+     * **Databases**: SQL, MongoDB
+     * **Reporting and work organization**: JIRA, GitHub, \TeX\, Markdown, Microsoft Office
+     * **Inactive knowledge**: C, C++, HTML
+     * **Familiar**: Java • Matlab • Wolfram Mathematica • Statistica
+
 
 * Human languages:
 
-     * Russian, Belarusian (native speaker)
+     * Belarusian, Russian (native speaker)
      * English (advanced)
-     * Want to learn: Spanish, Polish, German.
+     * Polish (intermediate)
+     * Want to learn: Spanish, German.
+
 
 * Other soft-skills:
 
@@ -238,17 +248,22 @@ Skills
      * Love to study and motivate myself!
      * Yes, I'm intellgent :D
 
+
 * What I love to do:
 
-     * Data pipelines design
-     * Communications on task statement
-     * Data preparation to analysis (after the task statement is accomplished!)
-     * Automatised data analysis pipelines.
+     * Tuning a model after initial experiment is done and you know the direction
+     * Communications on task statement aaaaand brainstormings!
+     * Data preparation for analysis, especially the cleaning and tidying part
+     * Data pipelines design, model deployment
+     * Documentation for reproducibility
 
-* What I'm usually bad at:
 
-     * Final reporting (hard to stop exploring :( )
-     * Routines that are not automatized for a long time (they're simply boring!).
+* What I can be bad at:
+
+     * Defining a moment where that's enough for exploring and time to finalize
+     * Stuck to weird routines if not automatized on time (i.e. running docker manually for each experiment)
+     * Sometimes i get too enthusiastic about a task that can unlikely be solved and spend time actually trying to solve it instead of moving forward
+
 
 Education
 ---------
@@ -266,6 +281,7 @@ Education
     Department of Mathematical Modelling and Data Analysis
 
     *Finished with distinction.*
+
 
 Self-Education
 ---------
@@ -287,6 +303,7 @@ Nov, 2017
 
     Convolutional Neural Networks for Visual Recognition (http://cs231n.stanford.edu/).
 
+
 Thesis Directions
 ---------
 
@@ -305,6 +322,7 @@ Undergraduate
     Least Sqares\
     Simulations (C, C++, Python)\
     Computer Graphics + Practicum (Wolfram Mathematica, R)
+
 
 Research
 ----------
@@ -327,6 +345,7 @@ Granted task on advanced time series models. Report is done.
 
 Worked on advanced time series analysis models and methods. Completed a granted task ``Statistical analysis of discrete time series and geospatial data''. Scientific adviser [Yu. S. Kharin](http://www.bsu.by/main.aspx?guid=82721). Report is done.
 
+
 Awards
 ----------
 
@@ -335,10 +354,12 @@ Awards
 * 2014 -- **Diploma**   -- Best report of section "Mathematics" (XVI Republican scientific conference of young scientists);
 * 2014 -- **2nd Prize** -- Republican contest of scientific works of students.
 
+
 Societies
 ----------
 
 **2014 - 2016** -- Belarus Statistical Association (member).
+
 
 Links
 ----------------------------------------
