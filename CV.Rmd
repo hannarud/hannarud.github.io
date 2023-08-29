@@ -11,7 +11,7 @@ Hanna Paulava
 
 >  Creativity can be boosted by mathematical exactness - I found this fact to be true while studying.\
 >  Since then I love Mathematics and like its harmony and making sense of many things in the world.\
->  It's great to see, how the data that was a complete mess at first sight
+>  It's great to see how the data that was a complete mess at first sight
 >  gives us some really interesting results!
 
 ----
@@ -199,7 +199,7 @@ January 2016- March 2016
 * Low-level software (OS).
 
 
-Side prjects & Open Source
+Side projects & Open Source
 --------------------
 
 Autoranking
@@ -246,7 +246,7 @@ Skills
      * Aim to solve the task, not to struggle with busy work
      * Able to work both as team player and independent player
      * Love to study and motivate myself!
-     * Yes, I'm intellgent :D
+     * Yes, I'm intelligent :D
 
 
 * What I love to do:
@@ -319,7 +319,7 @@ Undergraduate
 :   Time series analysis\
     Autoregressive processes\
     Statistical estimation of parameters\
-    Least Sqares\
+    Least Squares\
     Simulations (C, C++, Python)\
     Computer Graphics + Practicum (Wolfram Mathematica, R)
 
@@ -349,7 +349,7 @@ Worked on advanced time series analysis models and methods. Completed a granted 
 Awards
 ----------
 
-* 2015 -- **Gran Prix** -- FAMCS young scientiests contest;
+* 2015 -- **Gran Prix** -- FAMCS young scientists contest;
 * 2015 -- **1st Prize** -- Republican contest of scientific works of students;
 * 2014 -- **Diploma**   -- Best report of section "Mathematics" (XVI Republican scientific conference of young scientists);
 * 2014 -- **2nd Prize** -- Republican contest of scientific works of students.
