@@ -11,26 +11,40 @@
 
 
 
-<title>CV.utf8</title>
+<title>CV.knit</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -43,32 +57,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 
 
@@ -78,10 +68,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -98,40 +84,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -159,7 +121,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -171,7 +133,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -181,11 +143,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -197,13 +176,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -211,16 +189,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -264,7 +235,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -288,7 +259,7 @@ $(document).ready(function () {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="mailto:hanna.rudakouskaya@gmail.com">
+  <a href="mailto:hanna.v.paulava@gmail.com">
     <span class="fa fa-envelope"></span>
      
   </a>
@@ -296,12 +267,6 @@ $(document).ready(function () {
 <li>
   <a href="https://github.com/hannarud">
     <span class="fa fa-github"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="https://bitbucket.org/hannarud/">
-    <span class="fa fa-bitbucket"></span>
      
   </a>
 </li>
@@ -317,18 +282,12 @@ $(document).ready(function () {
      
   </a>
 </li>
-<li>
-  <a href="https://bsu.academia.edu/HannaRudakouskaya">
-    <span class="fa fa-university"></span>
-     
-  </a>
-</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -340,102 +299,228 @@ $(document).ready(function () {
 <h1>Hanna Paulava</h1>
 <hr />
 <blockquote>
-<p><a href="mailto:hanna.v.paulava@gmail.com" class="email">hanna.v.paulava@gmail.com</a> • +375 (29) 566 50 01 • 27 years old<br />
-Minsk, Belarus<br />
+<p><a href="mailto:hanna.v.paulava@gmail.com"
+class="email">hanna.v.paulava@gmail.com</a> • +48 513 169 909 • 30 years
+old<br />
+Wrocław, Poland<br />
 <a href="www.linkedin.com/in/hannarud">LinkedIn</a></p>
 </blockquote>
 <hr />
 <blockquote>
-<p>Creativity can be boosted by mathematical exactness - I found this fact to be true while studying.<br />
-Since then I love Mathematics and like its harmony and making sense of many things in the world.<br />
-It’s great to see, how the data that was a complete mess at first sight gives us some really interesting results!</p>
+<p>Creativity can be boosted by mathematical exactness - I found this
+fact to be true while studying.<br />
+Since then I love Mathematics and like its harmony and making sense of
+many things in the world.<br />
+It’s great to see, how the data that was a complete mess at first sight
+gives us some really interesting results!</p>
 </blockquote>
 <hr />
 <div id="experience" class="section level2">
 <h2>Experience</h2>
-<p><strong><a href="https://teqniksoft.com/">Teqniksoft</a></strong>, Data Analyst</p>
-<p><em>January 2016 – present | Minsk, BY</em></p>
+<p><strong><a href="https://www.immersive-fox.com">Immersive
+Fox</a></strong>, R&amp;D Specialist</p>
+<p><em>August 2022 – July 2023 | Wrocław, PL (remote)</em></p>
 <ul>
-<li>Data cleaning;</li>
-<li>Statistical inference;</li>
-<li>Image processing;</li>
-<li>Deep learning.</li>
+<li><p>Building Immersive Fox main engine - a set of Deep Learning
+models to create “AI presenter” - a model that is trained on video data
+and then able to produce talking face of the person using text or audio
+data</p></li>
+<li><p>Involved in a whole pipeline of ML team - data collecting,
+storing, preparing; model selection, training and fine-tuning; model
+deployment</p></li>
+<li><p>Working in close collaboration with Web and Business teams in
+order to ensure fast and efficient problem solving the startup way
+:)</p></li>
+<li><p>Partially working as a project manager for ML and Web
+teams</p></li>
+<li><p>Meetings with investors and customers, project
+presentation</p></li>
+<li><p>Toolbox &amp; frameworks:</p>
+<ul>
+<li>Python: PyTorch, opencv, numpy, audio processing libraries</li>
+<li>MLOps: GCP, AWS, lambda, ansible, wandb, bash scripting - involving
+storage solutions, instances setup for ML flows</li>
+<li>Studying related works - open source libraries, arXiv articles,
+applying them in order to solve several use cases</li>
+<li>JIRA, agile (partially as a scrum master), Notion, GitHub</li>
+</ul></li>
+</ul>
+<p><strong><a href="https://pivotics.com">Pivotics</a></strong>, Senior
+Data Scientist</p>
+<p><em>August 2021 – August 2022 | Wrocław, PL</em></p>
+<ul>
+<li>Deep Learning and image processing</li>
+<li>Time series - logs analysis, outlier detection</li>
+<li>Model deployment</li>
 </ul>
 <p>More on this position:</p>
 <dl>
-<dt>April 2018 - Now</dt>
-<dd><p>Project under NDA, Data Scientist</p>
+<dt>Aug 2021 - Aug 2022</dt>
+<dd>
+<p>Project under NDA, Senior Data Scientist</p>
 <ul>
 <li><p>Responsibilities:</p>
 <ul>
-<li>Data preprocessing;</li>
-<li>Feature ingineering;</li>
-<li>Bulding pipelines of image data processing with statistical methods;</li>
-<li>Creating deep learning models for image data of different sources;</li>
-<li>Fine-tuning famous deep learning moddels as well as developing custom pipelines;</li>
-<li>Results aggregation and presentation, documentation;</li>
+<li>Working with customers for identifying internal data sources with
+valuable data to solve the task stated</li>
+<li>Data preprocessing, augmentation, automatic outlier detection
+pipelines</li>
+<li>Building Deep Learning, statistical and time series models for image
+data analysis</li>
+<li>Building log analysis pipeline, including data cleaning, outlier
+detection, clustering, semi-supervised learning methods</li>
+<li>Close communication with the customer, at all stages (task
+statement, progress reports, model deployment).</li>
+</ul></li>
+<li><p>Toolbox &amp; frameworks:</p>
+<ul>
+<li>Python: TensorFlow, Keras, scikit-learn, opencv, numpy, pandas,
+jupyter</li>
+<li>Time series analysis, outlier detection, semi-supervised
+learning</li>
+</ul></li>
+</ul>
+</dd>
+</dl>
+<p><strong><a href="https://teqniksoft.com/">Teqniksoft</a></strong>,
+Data Analyst, then Data Scientist</p>
+<p><em>January 2016 – August 2021 | Minsk, BY</em></p>
+<ul>
+<li>Statistical data analysis - models, pipelines</li>
+<li>Machine learning - Computer Vision, Deep Learning</li>
+<li>Unsupervised learning - clustering, outlier detection</li>
+<li>Data pipelines - data cleaning, image preprocessing and
+augmentation, model deployment</li>
+</ul>
+<p>More on this position:</p>
+<dl>
+<dt>Jul 2019 - Aug 2021</dt>
+<dd>
+<p>Project under NDA, Senior Data Scientist</p>
+<ul>
+<li><p>Responsibilities:</p>
+<ul>
+<li>Closely working with the customer on data collection, storage
+methods</li>
+<li>Formulating hypothesis on what inference is possible with the data
+available (mostly image data / photos)</li>
+<li>Data preparation, augmentation, automatic outlier detection
+pipelines</li>
+<li>Feature engineering</li>
+<li>Building Deep Learning, statistical and time series models for image
+data analysis</li>
+<li>Results aggregation and presentation, documentation</li>
+<li>Model deployment into customer’s internal systems.</li>
+</ul></li>
+<li><p>Toolbox &amp; frameworks:</p>
+<ul>
+<li>Python: TensorFlow, Keras, scikit-learn, opencv, numpy, pandas,
+jupyter</li>
+<li>GPUs</li>
+<li>TensorFlow Object detection API, VGG, mask RCNN</li>
+<li>Outlier detection, Unsupervised methods (PCA, clustering, variance
+analysis).</li>
+</ul></li>
+</ul>
+</dd>
+<dt>April 2018 - Jul 2019</dt>
+<dd>
+<p>Project under NDA, Data Scientist</p>
+<ul>
+<li><p>Responsibilities:</p>
+<ul>
+<li>Data preprocessing</li>
+<li>Feature engineering</li>
+<li>Building pipelines of image data processing with statistical
+methods</li>
+<li>Creating deep learning models for image data of different
+sources</li>
+<li>Fine-tuning famous deep learning models as well as developing custom
+pipelines</li>
+<li>Results aggregation and presentation, documentation</li>
 <li>Communicating with customer.</li>
 </ul></li>
 <li><p>Toolbox &amp; frameworks:</p>
 <ul>
-<li>Python: TensorFlow, Keras, scikit-learn, opencv, plotly, numpy, pandas, jupyter;</li>
-<li>GPUs;</li>
-<li>TensorFlow Object detection API.</li>
+<li>Python: TensorFlow, Keras, scikit-learn, opencv, plotly, numpy,
+pandas, jupyter</li>
+<li>GPUs</li>
+<li>TensorFlow Object detection API</li>
+<li>Outlier detection.</li>
 </ul></li>
 </ul>
 </dd>
 <dt>February 2017 - April 2018</dt>
-<dd><p>Project under NDA, Data Scientist</p>
+<dd>
+<p>Project under NDA, Data Analyst - Data Scientist</p>
 <ul>
 <li><p>Responsibilities:</p>
 <ul>
-<li>Data mining and data analysis of huge amounts of structured data with observations of different physical processes;</li>
-<li>Building and analyzing linear regression models, automatization of model building process, working with feature selection methods (backward &amp; forward subset selection), model improvement;</li>
-<li>Working with huge imbalance samples in classification problem;</li>
-<li>Graphical analysis of data;</li>
-<li>Performing a full stack of data analysis procedures (get &amp; clean data, evaluate and tune analysis, present results);</li>
-<li>Preparing a documentation framework;</li>
-<li>Automation of analysis and preparation of DA scripts sets;</li>
-<li>Data cleaning pipeline with advanced techniques;</li>
+<li>Data mining and data analysis of huge amounts of structured data
+with observations of different physical processes</li>
+<li>Building and analysing linear regression models, automation of model
+building process, working with feature selection methods (backward &amp;
+forward subset selection), model improvement</li>
+<li>Working with huge imbalance samples in classification problem</li>
+<li>Graphical analysis of data</li>
+<li>Performing a full stack of data analysis procedures (get &amp; clean
+data, evaluate and tune analysis, present results)</li>
+<li>Preparing a documentation framework</li>
+<li>Automation of analysis and preparation of DA scripts sets</li>
+<li>Data cleaning pipeline with advanced techniques</li>
 <li>Communicating with customer.</li>
 </ul></li>
 <li><p>Toolbox &amp; frameworks:</p>
 <ul>
-<li>R and Rstudio (data.table, dplyr, caret, xgboost, lm, ggplot2);</li>
-<li>SQL, Hive, Impala (through user interface), integrated database tool in R;</li>
-<li>Atlassian set of tools for project management (Jira, Bitbucket, Confluence);</li>
+<li>R and Rstudio (data.table, dplyr, caret, xgboost, lm, ggplot2)</li>
+<li>SQL, Hive, Impala (through user interface), integrated database tool
+in R</li>
+<li>Atlassian set of tools for project management (Jira, Bitbucket,
+Confluence)</li>
 <li>Python (IPython, pandas, xgboost).</li>
 </ul></li>
 </ul>
 </dd>
 <dt>March 2016 - March 2017</dt>
-<dd><p>Project under NDA, Data Analyst</p>
+<dd>
+<p>Project under NDA, Data Analyst</p>
 <ul>
 <li><p>Responsibilities:</p>
-<p>Sanity care &amp; intelligent maintenance of databases. Development of integrated Data Analysis automatic reporting module. Data-driven research for future project’s needs. Including but not limited to:</p>
+<p>Sanity care &amp; intelligent maintenance of databases. Development
+of integrated Data Analysis automatic reporting module. Data-driven
+research for future project’s needs. Including but not limited to:</p>
 <ul>
-<li>Sanity care &amp; intelligent maintenance of databases;</li>
-<li>Development of integrated Data Analysis automatic reporting module;</li>
-<li>Data-driven research for future project’s needs;</li>
-<li>Maintain the documentation on database design;</li>
-<li>Reporting on unusual data behavior and incorrect data usage;</li>
-<li>Constantly checking the correctness of data flow and integration;</li>
+<li>Sanity care &amp; intelligent maintenance of databases</li>
+<li>Development of integrated Data Analysis automatic reporting
+module</li>
+<li>Data-driven research for future project’s needs</li>
+<li>Maintain the documentation on database design</li>
+<li>Reporting on unusual data behaviour and incorrect data usage</li>
+<li>Constantly checking the correctness of data flow and
+integration</li>
 <li>Communicating with customer.</li>
 </ul></li>
 <li><p>Toolbox &amp; frameworks:</p>
 <ul>
-<li>• R and Rstudio, MongoDB, Regular Expressions, server-side analytics, Jenkins, Linux, Cron (Linux daemon).</li>
+<li>R and Rstudio</li>
+<li>MongoDB</li>
+<li>Regular Expressions</li>
+<li>server-side analytics</li>
+<li>Jenkins</li>
+<li>Linux, Cron (Linux daemon).</li>
 </ul></li>
 </ul>
 </dd>
 <dt>January 2016- March 2016</dt>
-<dd><p>Project under NDA, Junior Data Analyst</p>
+<dd>
+<p>Project under NDA, Junior Data Analyst</p>
 <ul>
 <li><p>Responsibilities:</p>
-<p>Text mining improvements for project’s needs. Including but not limited to:</p>
+<p>Text mining improvements for project’s needs. Including but not
+limited to:</p>
 <ul>
-<li>Communications with customer.</li>
-<li>Text mining using Regular Expressions.</li>
+<li>Communications with customer</li>
+<li>Text mining using Regular Expressions</li>
 <li>Text-specific patterns recognition.</li>
 </ul></li>
 <li><p>Toolbox &amp; frameworks:</p>
@@ -445,22 +530,25 @@ It’s great to see, how the data that was a complete mess at first sight gives 
 </ul>
 </dd>
 </dl>
-<p><strong><a href="http://apmi.bsu.by/">Research Institute for Applied Problems of Mathematics and Informatics</a></strong>, Assistant</p>
+<p><strong><a href="http://apmi.bsu.by/">Research Institute for Applied
+Problems of Mathematics and Informatics</a></strong>, Assistant</p>
 <p><em>October 2013 – December 2015 | BSU, Minsk, BY</em></p>
 <ul>
-<li>Research on autoregressive time series;</li>
-<li>Working for big data laboratory;</li>
-<li>Statistical analysis of social data (together with <a href="https://indatalabs.com/">InData Labs</a>);</li>
-<li>Data cleaning;</li>
-<li>Simulations using C, C++, Python;</li>
-<li>Real-data applications;</li>
+<li>Research on autoregressive time series</li>
+<li>Working for big data laboratory</li>
+<li>Statistical analysis of social data (together with <a
+href="https://indatalabs.com/">InData Labs</a>)</li>
+<li>Data cleaning</li>
+<li>Simulations using C, C++, Python</li>
+<li>Real-data applications</li>
 <li>Statistical inference.</li>
 </ul>
-<p><strong><a href="https://www.exadel.com/">EXADEL</a></strong>, System QA Programmer</p>
+<p><strong><a href="https://www.exadel.com/">EXADEL</a></strong>, System
+QA Programmer</p>
 <p><em>August 2012 – August 2013 | HTP, Minsk, BY</em></p>
 <ul>
-<li>Automated tests;</li>
-<li>C on Linux;</li>
+<li>Automated tests</li>
+<li>C on Linux</li>
 <li>Low-level software (OS).</li>
 </ul>
 </div>
@@ -468,14 +556,21 @@ It’s great to see, how the data that was a complete mess at first sight gives 
 <h2>Side prjects &amp; Open Source</h2>
 <dl>
 <dt>Autoranking</dt>
-<dd><p>Not-so-cool-side-project performed by me when necessary. A small framework for building rankings of children who run orienteering in Belarus.</p>
+<dd>
+<p>A side project originally owned by me - a small framework for
+computing sport rankings for Belarusian orienteers. Active in
+2016-2022</p>
 <ul>
 <li>Written on R with GoogleSheets as a database.</li>
-<li>Can be found under this <a href="https://github.com/juniororienteeringblr/autoranking">link</a>.</li>
+<li>Can be found under this <a
+href="https://github.com/juniororienteeringblr/autoranking">link</a>.</li>
 </ul>
 </dd>
 <dt>Open Source</dt>
-<dd>Contributing to <a href="https://github.com/opencv/opencv">OpenCV</a> and <a href="https://github.com/tensorflow/models">Tensorflow models</a>.
+<dd>
+Contributing to <a href="https://github.com/opencv/opencv">OpenCV</a>
+and <a href="https://github.com/tensorflow/models">Tensorflow
+models</a>.
 </dd>
 </dl>
 </div>
@@ -484,39 +579,46 @@ It’s great to see, how the data that was a complete mess at first sight gives 
 <ul>
 <li><p>Technical:</p>
 <ul>
-<li><strong>Active knowledge</strong>: Python (NumPy, SciPy, scikit-learn, TensorFlow, Keras, opencv, matplotlib, plotly) • R (incl. base &amp; ggplot graphics, Rmd, other popular RStudio team’s packages) •  • Markdown • SQL • MongoDB;</li>
-<li><strong>Inactive knowledge</strong>: C • C++ • HTML;</li>
-<li><strong>Familiar</strong>: Java • Matlab;</li>
-<li><strong>Know but prefer not to work with</strong>: Statistica, Weka, Excel.</li>
+<li><strong>Active knowledge</strong>: Python (NumPy, SciPy,
+scikit-learn, TensorFlow, Keras, opencv, matplotlib, plotly) • R
+(incl. base &amp; ggplot graphics, Rmd, other popular RStudio team’s
+packages) •  • Markdown • SQL • MongoDB</li>
+<li><strong>Inactive knowledge</strong>: C • C++ • HTML</li>
+<li><strong>Familiar</strong>: Java • Matlab</li>
+<li><strong>Know but prefer not to work with</strong>: Statistica, Weka,
+Excel.</li>
 </ul></li>
-<li><p>Human Languages:</p>
+<li><p>Human languages:</p>
 <ul>
-<li>Russian, Belarusian (native speaker);</li>
-<li>English (advanced);</li>
+<li>Russian, Belarusian (native speaker)</li>
+<li>English (advanced)</li>
 <li>Want to learn: Spanish, Polish, German.</li>
 </ul></li>
 <li><p>Other soft-skills:</p>
 <ul>
 <li>Communicative and initiative;</li>
-<li>Responsible for myself and my team;</li>
-<li>Self-organized;</li>
-<li>Good at problem solving, use logic and creativity in order to find best solutions;</li>
-<li>Aim to solve the task, not to struggle with busy work;</li>
-<li>Ablo to work both as team player and independent player;</li>
+<li>Responsible for myself and my team</li>
+<li>Self-organized</li>
+<li>Good at problem solving, use logic and creativity in order to find
+best solutions</li>
+<li>Aim to solve the task, not to struggle with busy work</li>
+<li>Able to work both as team player and independent player</li>
 <li>Love to study and motivate myself!</li>
 <li>Yes, I’m intellgent :D</li>
 </ul></li>
 <li><p>What I love to do:</p>
 <ul>
-<li>Data pipelines design;</li>
-<li>Communications on task statement;</li>
-<li>Data preparation to analysis (after the task statement is accomplished!);</li>
-<li>Automatized data analysis pipelines.</li>
+<li>Data pipelines design</li>
+<li>Communications on task statement</li>
+<li>Data preparation to analysis (after the task statement is
+accomplished!)</li>
+<li>Automatised data analysis pipelines.</li>
 </ul></li>
 <li><p>What I’m usually bad at:</p>
 <ul>
-<li>Final reporting (hard to stop exploring :( );</li>
-<li>Routines that are not automatized for a long time (they’re simply boring!).</li>
+<li>Final reporting (hard to stop exploring :( )</li>
+<li>Routines that are not automatized for a long time (they’re simply
+boring!).</li>
 </ul></li>
 </ul>
 </div>
@@ -524,12 +626,19 @@ It’s great to see, how the data that was a complete mess at first sight gives 
 <h2>Education</h2>
 <dl>
 <dt>2015-2016</dt>
-<dd><p><strong>MSc, Applied Computer Data Analysis</strong>; Belarusian State University, Faculty of Applied Mathematics and Computer Science</p>
-<p>Studies focused on Data Analysis. Scientific research on autoregressive time series.</p>
-<p><em>Thesis title</em>: Autoregressive time series observed under classification.</p>
+<dd>
+<p><strong>MSc, Applied Computer Data Analysis</strong>; Belarusian
+State University, Faculty of Applied Mathematics and Computer
+Science</p>
+<p>Studies focused on Data Analysis. Scientific research on
+autoregressive time series.</p>
+<p><em>Thesis title</em>: Autoregressive time series observed under
+classification.</p>
 </dd>
 <dt>2010-2015</dt>
-<dd><p><strong>BSc, Applied Mathematics</strong>; Belarusian State University, Faculty of Applied Mathematics and Computer Science</p>
+<dd>
+<p><strong>BSc, Applied Mathematics</strong>; Belarusian State
+University, Faculty of Applied Mathematics and Computer Science</p>
 <p>Department of Mathematical Modelling and Data Analysis</p>
 <p><em>Finished with distinction.</em></p>
 </dd>
@@ -539,18 +648,28 @@ It’s great to see, how the data that was a complete mess at first sight gives 
 <h2>Self-Education</h2>
 <dl>
 <dt>2012</dt>
-<dd><strong>Coursera, edx, Kaggle</strong>
+<dd>
+<strong>Coursera, edx, Kaggle</strong>
 </dd>
-<dt>Mar, 2017 – now</dt>
-<dd><strong>OpenDataScience</strong>; meetups &amp; community work, ML Course in data science (<a href="http://mlcourse.ai/" class="uri">http://mlcourse.ai/</a>).
+<dt>Mar, 2017 – 2022</dt>
+<dd>
+<strong>OpenDataScience</strong>; meetups &amp; community work, ML
+Course in data science (<a href="http://mlcourse.ai/"
+class="uri">http://mlcourse.ai/</a>).
 </dd>
 <dt>Mar, 2017 – 2019</dt>
-<dd><p><strong>Belarus Big Data User Group</strong></p>
-<p>Attending and performing talks for Belarus Big Data User Group (<a href="https://www.facebook.com/groups/big.data.nerds.minsk/" class="uri">https://www.facebook.com/groups/big.data.nerds.minsk/</a>)</p>
+<dd>
+<p><strong>Belarus Big Data User Group</strong></p>
+<p>Attending and performing talks for Belarus Big Data User Group (<a
+href="https://www.facebook.com/groups/big.data.nerds.minsk/"
+class="uri">https://www.facebook.com/groups/big.data.nerds.minsk/</a>)</p>
 </dd>
 <dt>Nov, 2017</dt>
-<dd><p><strong>CS231n</strong></p>
-<p>Convolutional Neural Networks for Visual Recognition (<a href="http://cs231n.stanford.edu/" class="uri">http://cs231n.stanford.edu/</a>).</p>
+<dd>
+<p><strong>CS231n</strong></p>
+<p>Convolutional Neural Networks for Visual Recognition (<a
+href="http://cs231n.stanford.edu/"
+class="uri">http://cs231n.stanford.edu/</a>).</p>
 </dd>
 </dl>
 </div>
@@ -558,7 +677,8 @@ It’s great to see, how the data that was a complete mess at first sight gives 
 <h2>Thesis Directions</h2>
 <dl>
 <dt>Graduate</dt>
-<dd>Time series analysis<br />
+<dd>
+Time series analysis<br />
 Autoregressive processes<br />
 Statistical estimation of parameters<br />
 Estimation using ML, MM<br />
@@ -566,7 +686,8 @@ Simulations (Python)<br />
 Computer Graphics + Practicum (R)
 </dd>
 <dt>Undergraduate</dt>
-<dd>Time series analysis<br />
+<dd>
+Time series analysis<br />
 Autoregressive processes<br />
 Statistical estimation of parameters<br />
 Least Sqares<br />
@@ -577,45 +698,61 @@ Computer Graphics + Practicum (Wolfram Mathematica, R)
 </div>
 <div id="research" class="section level2">
 <h2>Research</h2>
-<p><strong><a href="https://fpmi.bsu.by/">BSU | Mathematical Modelling and Data Analysis Dept.</a></strong></p>
+<p><strong><a href="https://fpmi.bsu.by/">BSU | Mathematical Modelling
+and Data Analysis Dept.</a></strong></p>
 <p><em>Jan 2015 – Dec 2015 | BSU, Minsk, BY</em></p>
-<p>Granted task on advanced time series models – Autoregressive time series observed under classification.</p>
-<p><strong><a href="https://fpmi.bsu.by/">BSU | Mathematical Modelling and Data Analysis Department</a></strong></p>
+<p>Granted task on advanced time series models – Autoregressive time
+series observed under classification.</p>
+<p><strong><a href="https://fpmi.bsu.by/">BSU | Mathematical Modelling
+and Data Analysis Department</a></strong></p>
 <p><em>Jan 2014 – Dec 2014 | BSU, Minsk, BY</em></p>
 <p>Granted task on advanced time series models. Report is done.</p>
-<p><strong><a href="http://apmi.bsu.by/">APMI Research Institute</a></strong>, Applied Mathematics Lab</p>
+<p><strong><a href="http://apmi.bsu.by/">APMI Research
+Institute</a></strong>, Applied Mathematics Lab</p>
 <p><em>Jan 2013 – Dec 2013 | BSU, Minsk, BY</em></p>
-<p>Worked on advanced time series analysis models and methods. Completed a granted task ``Statistical analysis of discrete time series and geospatial data’’. Scientific adviser <a href="http://www.bsu.by/main.aspx?guid=82721">Yu. S. Kharin</a>. Report is done.</p>
+<p>Worked on advanced time series analysis models and methods. Completed
+a granted task ``Statistical analysis of discrete time series and
+geospatial data’’. Scientific adviser <a
+href="http://www.bsu.by/main.aspx?guid=82721">Yu. S. Kharin</a>. Report
+is done.</p>
 </div>
 <div id="awards" class="section level2">
 <h2>Awards</h2>
 <ul>
-<li>2015 – <strong>Gran Prix</strong> – FAMCS young scientiests contest;</li>
-<li>2015 – <strong>1st Prize</strong> – Republican contest of scientific works of students;</li>
-<li>2014 – <strong>Diploma</strong> – Best report of section “Mathematics” (XVI Republican scientific conference of young scientists);</li>
-<li>2014 – <strong>2nd Prize</strong> – Republican contest of scientific works of students.</li>
+<li>2015 – <strong>Gran Prix</strong> – FAMCS young scientiests
+contest;</li>
+<li>2015 – <strong>1st Prize</strong> – Republican contest of scientific
+works of students;</li>
+<li>2014 – <strong>Diploma</strong> – Best report of section
+“Mathematics” (XVI Republican scientific conference of young
+scientists);</li>
+<li>2014 – <strong>2nd Prize</strong> – Republican contest of scientific
+works of students.</li>
 </ul>
 </div>
 <div id="societies" class="section level2">
 <h2>Societies</h2>
-<p><strong>2014 - 2016</strong> – National &amp; Belarus Statistical Assotiation (member).</p>
+<p><strong>2014 - 2016</strong> – Belarus Statistical Association
+(member).</p>
 </div>
 <div id="links" class="section level2">
 <h2>Links</h2>
 <ul>
 <li>Github: <a href="https://github.com/hannarud">hannarud</a>;</li>
-<li>Bitbucket: <a href="https://bitbucket.org/hannarud/">hannarud</a>;</li>
-<li>LinkedIn: <a href="https://www.linkedin.com/in/hannarud">hannarud</a> (again :) );</li>
+<li>LinkedIn: <a
+href="https://www.linkedin.com/in/hannarud">hannarud</a> (again :)
+);</li>
 <li>Twitter: <a href="https://twitter.com/ohannarud">ohannarud</a>;</li>
-<li>Research Gate: <a href="https://www.researchgate.net/profile/Hanna_Rudakouskaya">Hanna Rudakouskaya</a>;</li>
-<li>Academia.edu: <a href="https://bsu.academia.edu/HannaRudakouskaya">Hanna Rudakouskaya</a>;</li>
-<li>Stackowerflow careers: <a href="https://careers.stackoverflow.com/cv/employer/284151">Hanna Rudakouskaya</a>.</li>
+<li>Research Gate: <a
+href="https://www.researchgate.net/profile/Hanna_Rudakouskaya">Hanna
+Rudakouskaya</a>.</li>
 </ul>
 <hr />
 <blockquote>
-<p><a href="mailto:hanna.v.paulava@gmail.com" class="email">hanna.v.paulava@gmail.com</a> • +375 (29) 566 50 01<br />
-Minsk, Belarus<br />
-as of Jun, 2020</p>
+<p><a href="mailto:hanna.v.paulava@gmail.com"
+class="email">hanna.v.paulava@gmail.com</a> • +48 513169909<br />
+Wrocław, Poland<br />
+as of Aug, 2023</p>
 </blockquote>
 </div>
 </div>
@@ -629,7 +766,7 @@ as of Jun, 2020</p>
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -647,7 +784,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

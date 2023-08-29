@@ -3,8 +3,8 @@ Hanna Paulava
 
 ----
 
-> <hanna.v.paulava@gmail.com> • +375 (29) 566 50 01 • 27 years old\
-> Minsk, Belarus\
+> <hanna.v.paulava@gmail.com> • +48 513 169 909 • 30 years old\
+> Wrocław, Poland\
 > [LinkedIn](www.linkedin.com/in/hannarud)
 
 ----
@@ -19,56 +19,122 @@ Hanna Paulava
 Experience
 ----------
 
-**[Teqniksoft](https://teqniksoft.com/)**, Data Analyst
+**[Immersive Fox](https://www.immersive-fox.com)**, R&D Specialist
 
-*January 2016 – present | Minsk, BY*
+*August 2022 – July 2023 | Wrocław, PL (remote)*
 
-* Data cleaning;
-* Statistical inference;
-* Image processing;
-* Deep learning.
+* Building Immersive Fox main engine - a set of Deep Learning models to create "AI presenter" - a model that is trained on video data and then able to produce talking face of the person using text or audio data
+* Involved in a whole pipeline of ML team - data collecting, storing, preparing; model selection, training and fine-tuning; model deployment
+* Working in close collaboration with Web and Business teams in order to ensure fast and efficient problem solving the startup way :)
+* Partially working as a project manager for ML and Web teams
+* Meetings with investors and customers, project presentation
+
+* Toolbox & frameworks:
+
+    * Python: PyTorch, opencv, numpy, audio processing libraries
+    * MLOps: GCP, AWS, lambda, ansible, wandb, bash scripting - involving storage solutions, instances setup for ML flows
+    * Studying related works - open source libraries, arXiv articles, applying them in order to solve several use cases
+    * JIRA, agile (partially as a scrum master), Notion, GitHub
+
+
+**[Pivotics](https://pivotics.com)**, Senior Data Scientist
+
+*August 2021 – August 2022 | Wrocław, PL*
+
+* Deep Learning and image processing
+* Time series - logs analysis, outlier detection
+* Model deployment
 
 More on this position:
 
-April 2018 - Now
+Aug 2021 - Aug 2022
+:   Project under NDA, Senior Data Scientist
+
+    * Responsibilities:
+    
+        * Working with customers for identifying internal data sources with valuable data to solve the task stated
+        * Data preprocessing, augmentation, automatic outlier detection pipelines
+        * Building Deep Learning, statistical and time series models for image data analysis
+        * Building log analysis pipeline, including data cleaning, outlier detection, clustering, semi-supervised learning methods
+        * Close communication with the customer, at all stages (task statement, progress reports, model deployment).
+    
+    * Toolbox & frameworks:
+    
+        * Python: TensorFlow, Keras, scikit-learn, opencv, numpy, pandas, jupyter
+        * Time series analysis, outlier detection, semi-supervised learning
+
+
+**[Teqniksoft](https://teqniksoft.com/)**, Data Analyst, then Data Scientist
+
+*January 2016 – August 2021 | Minsk, BY*
+
+* Statistical data analysis - models, pipelines
+* Machine learning - Computer Vision, Deep Learning
+* Unsupervised learning - clustering, outlier detection
+* Data pipelines - data cleaning, image preprocessing and augmentation, model deployment
+
+More on this position:
+
+Jul 2019 - Aug 2021
+:   Project under NDA, Senior Data Scientist
+
+    * Responsibilities:
+    
+        * Closely working with the customer on data collection, storage methods
+        * Formulating hypothesis on what inference is possible with the data available (mostly image data / photos)
+        * Data preparation, augmentation, automatic outlier detection pipelines
+        * Feature engineering
+        * Building Deep Learning, statistical and time series models for image data analysis
+        * Results aggregation and presentation, documentation
+        * Model deployment into customer's internal systems.
+    
+    * Toolbox & frameworks:
+    
+        * Python: TensorFlow, Keras, scikit-learn, opencv, numpy, pandas, jupyter
+        * GPUs
+        * TensorFlow Object detection API, VGG, mask RCNN
+        * Outlier detection, Unsupervised methods (PCA, clustering, variance analysis).
+
+April 2018 - Jul 2019
 :   Project under NDA, Data Scientist
 
     * Responsibilities:
     
-        * Data preprocessing;
-        * Feature ingineering;
-        * Bulding pipelines of image data processing with statistical methods;
-        * Creating deep learning models for image data of different sources;
-        * Fine-tuning famous deep learning moddels as well as developing custom pipelines;
-        * Results aggregation and presentation, documentation;
+        * Data preprocessing
+        * Feature engineering
+        * Building pipelines of image data processing with statistical methods
+        * Creating deep learning models for image data of different sources
+        * Fine-tuning famous deep learning models as well as developing custom pipelines
+        * Results aggregation and presentation, documentation
         * Communicating with customer.
     
     * Toolbox & frameworks:
     
-        * Python: TensorFlow, Keras, scikit-learn, opencv, plotly, numpy, pandas, jupyter;
-        * GPUs;
-        * TensorFlow Object detection API.
+        * Python: TensorFlow, Keras, scikit-learn, opencv, plotly, numpy, pandas, jupyter
+        * GPUs
+        * TensorFlow Object detection API
+        * Outlier detection.
 
 February 2017 - April 2018
-:   Project under NDA, Data Scientist
+:   Project under NDA, Data Analyst - Data Scientist
 
     * Responsibilities:
     
-        * Data mining and data analysis of huge amounts of structured data with observations of different physical processes;
-        * Building and analyzing linear regression models, automatization of model building process, working with feature selection methods (backward & forward subset selection), model improvement;
-        * Working with huge imbalance samples in classification problem;
-        * Graphical analysis of data;
-        * Performing a full stack of data analysis procedures (get & clean data, evaluate and tune analysis, present results);
-        * Preparing a documentation framework;
-        * Automation of analysis and preparation of DA scripts sets;
-        * Data cleaning pipeline with advanced techniques;
+        * Data mining and data analysis of huge amounts of structured data with observations of different physical processes
+        * Building and analysing linear regression models, automation of model building process, working with feature selection methods (backward & forward subset selection), model improvement
+        * Working with huge imbalance samples in classification problem
+        * Graphical analysis of data
+        * Performing a full stack of data analysis procedures (get & clean data, evaluate and tune analysis, present results)
+        * Preparing a documentation framework
+        * Automation of analysis and preparation of DA scripts sets
+        * Data cleaning pipeline with advanced techniques
         * Communicating with customer.
     
     * Toolbox & frameworks:
     
-        * R and Rstudio (data.table, dplyr, caret, xgboost, lm, ggplot2);
-        * SQL, Hive, Impala (through user interface), integrated database tool in R;
-        * Atlassian set of tools for project management (Jira, Bitbucket, Confluence);
+        * R and Rstudio (data.table, dplyr, caret, xgboost, lm, ggplot2)
+        * SQL, Hive, Impala (through user interface), integrated database tool in R
+        * Atlassian set of tools for project management (Jira, Bitbucket, Confluence)
         * Python (IPython, pandas, xgboost).
 
 March 2016 - March 2017
@@ -78,17 +144,22 @@ March 2016 - March 2017
     
         Sanity care & intelligent maintenance of databases. Development of integrated Data Analysis automatic reporting module. Data-driven research for future project’s needs. Including but not limited to:
         
-        * Sanity care & intelligent maintenance of databases;
-        * Development of integrated Data Analysis automatic reporting module;
-        * Data-driven research for future project’s needs;
-        * Maintain the documentation on database design;
-        * Reporting on unusual data behavior and incorrect data usage;
-        * Constantly checking the correctness of data flow and integration;
+        * Sanity care & intelligent maintenance of databases
+        * Development of integrated Data Analysis automatic reporting module
+        * Data-driven research for future project’s needs
+        * Maintain the documentation on database design
+        * Reporting on unusual data behaviour and incorrect data usage
+        * Constantly checking the correctness of data flow and integration
         * Communicating with customer.
     
     * Toolbox & frameworks:
     
-        * •	R and Rstudio, MongoDB, Regular Expressions, server-side analytics, Jenkins, Linux, Cron (Linux daemon).
+        * R and Rstudio
+        * MongoDB
+        * Regular Expressions
+        * server-side analytics
+        * Jenkins
+        * Linux, Cron (Linux daemon).
 
 January 2016- March 2016
 :   Project under NDA, Junior Data Analyst
@@ -97,39 +168,41 @@ January 2016- March 2016
     
         Text mining improvements for project’s needs. Including but not limited to:
         
-        * Communications with customer.
-        * Text mining using Regular Expressions.
+        * Communications with customer
+        * Text mining using Regular Expressions
         * Text-specific patterns recognition.
     
     * Toolbox & frameworks:
     
         * •	R and Rstudio, Excel, regular expressions.
 
+
 **[Research Institute for Applied Problems of Mathematics and Informatics](http://apmi.bsu.by/)**, Assistant
 
 *October 2013 – December 2015 | BSU, Minsk, BY*
 
-* Research on autoregressive time series;
-* Working for big data laboratory;
-* Statistical analysis of social data (together with [InData Labs](https://indatalabs.com/));
-* Data cleaning;
-* Simulations using C, C++, Python;
-* Real-data applications;
+* Research on autoregressive time series
+* Working for big data laboratory
+* Statistical analysis of social data (together with [InData Labs](https://indatalabs.com/))
+* Data cleaning
+* Simulations using C, C++, Python
+* Real-data applications
 * Statistical inference.
+
 
 **[EXADEL](https://www.exadel.com/)**, System QA Programmer
 
 *August 2012 – August 2013 | HTP, Minsk, BY*
 
-* Automated tests;
-* C on Linux;
+* Automated tests
+* C on Linux
 * Low-level software (OS).
 
 Side prjects & Open Source
 --------------------
 
 Autoranking
-:   Not-so-cool-side-project performed by me when necessary. A small framework for building rankings of children who run orienteering in Belarus.
+:   A side project originally owned by me - a small framework for computing sport rankings for Belarusian orienteers. Active in 2016-2022
 
     * Written on R with GoogleSheets as a database.
     * Can be found under this [link](https://github.com/juniororienteeringblr/autoranking).
@@ -143,38 +216,38 @@ Skills
 
 * Technical:
 
-     * **Active knowledge**: Python (NumPy, SciPy, scikit-learn, TensorFlow, Keras, opencv, matplotlib, plotly) • R (incl. base & ggplot graphics, Rmd, other popular RStudio team's packages) • \TeX\ • Markdown • SQL • MongoDB;
-     * **Inactive knowledge**: C • C++ • HTML;
-     * **Familiar**: Java • Matlab;
+     * **Active knowledge**: Python (NumPy, SciPy, scikit-learn, TensorFlow, Keras, opencv, matplotlib, plotly) • R (incl. base & ggplot graphics, Rmd, other popular RStudio team's packages) • \TeX\ • Markdown • SQL • MongoDB
+     * **Inactive knowledge**: C • C++ • HTML
+     * **Familiar**: Java • Matlab
      * **Know but prefer not to work with**: Statistica, Weka, Excel.
 
-* Human Languages:
+* Human languages:
 
-     * Russian, Belarusian (native speaker);
-     * English (advanced);
+     * Russian, Belarusian (native speaker)
+     * English (advanced)
      * Want to learn: Spanish, Polish, German.
 
 * Other soft-skills:
 
      * Communicative and initiative;
-     * Responsible for myself and my team;
-     * Self-organized;
-     * Good at problem solving, use logic and creativity in order to find best solutions;
-     * Aim to solve the task, not to struggle with busy work;
-     * Ablo to work both as team player and independent player;
+     * Responsible for myself and my team
+     * Self-organized
+     * Good at problem solving, use logic and creativity in order to find best solutions
+     * Aim to solve the task, not to struggle with busy work
+     * Able to work both as team player and independent player
      * Love to study and motivate myself!
      * Yes, I'm intellgent :D
 
 * What I love to do:
 
-     * Data pipelines design;
-     * Communications on task statement;
-     * Data preparation to analysis (after the task statement is accomplished!);
-     * Automatized data analysis pipelines.
+     * Data pipelines design
+     * Communications on task statement
+     * Data preparation to analysis (after the task statement is accomplished!)
+     * Automatised data analysis pipelines.
 
 * What I'm usually bad at:
 
-     * Final reporting (hard to stop exploring :( );
+     * Final reporting (hard to stop exploring :( )
      * Routines that are not automatized for a long time (they're simply boring!).
 
 Education
@@ -201,7 +274,7 @@ Self-Education
 :   **Coursera, edx, Kaggle**
 
 
-Mar, 2017 – now
+Mar, 2017 – 2022
 :   **OpenDataScience**; meetups & community work, ML Course in data science (http://mlcourse.ai/).
 
 Mar, 2017 – 2019
@@ -265,21 +338,18 @@ Awards
 Societies
 ----------
 
-**2014 - 2016** -- National & Belarus Statistical Assotiation (member).
+**2014 - 2016** -- Belarus Statistical Association (member).
 
 Links
 ----------------------------------------
 
 * Github: [hannarud](https://github.com/hannarud);
-* Bitbucket: [hannarud](https://bitbucket.org/hannarud/);
 * LinkedIn: [hannarud](https://www.linkedin.com/in/hannarud) (again :) );
 * Twitter: [ohannarud](https://twitter.com/ohannarud);
-* Research Gate: [Hanna Rudakouskaya](https://www.researchgate.net/profile/Hanna_Rudakouskaya);
-* Academia.edu: [Hanna Rudakouskaya](https://bsu.academia.edu/HannaRudakouskaya);
-* Stackowerflow careers: [Hanna Rudakouskaya](https://careers.stackoverflow.com/cv/employer/284151).
+* Research Gate: [Hanna Rudakouskaya](https://www.researchgate.net/profile/Hanna_Rudakouskaya).
 
 ----
 
-> <hanna.v.paulava@gmail.com> • +375 (29) 566 50 01\
-> Minsk, Belarus\
-> as of Jun, 2020
+> <hanna.v.paulava@gmail.com> • +48 513169909\
+> Wrocław, Poland\
+> as of Aug, 2023

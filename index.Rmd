@@ -1,5 +1,5 @@
 ---
-title: "Hanna Rudakouskaya: work, research etc."
+title: "Hanna Paulava: work, research etc."
 ---
 
 <center><h2>Welcome to my GitHub page!</h2></center>
