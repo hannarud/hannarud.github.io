@@ -3,7 +3,7 @@ Hanna Paulava
 
 ----
 
-> <hanna.v.paulava@gmail.com> • +48 513 169 909 • 30 years old\
+> <hanna.v.paulava@gmail.com>\
 > Wrocław, Poland\
 > [LinkedIn](www.linkedin.com/in/hannarud)
 
@@ -106,7 +106,7 @@ April 2018 - Jul 2019
         * Creating deep learning models for image data of different sources
         * Fine-tuning famous deep learning models as well as developing custom pipelines
         * Results aggregation and presentation, documentation
-        * Communicating with customer.
+        * Communicating with the customer.
     
     * Toolbox & frameworks:
     
@@ -121,14 +121,14 @@ February 2017 - April 2018
     * Responsibilities:
     
         * Data mining and data analysis of huge amounts of structured data with observations of different physical processes
-        * Building and analysing linear regression models, automation of model building process, working with feature selection methods (backward & forward subset selection), model improvement
+        * Building and analyzing linear regression models, automation of model building process, working with feature selection methods (backward & forward subset selection), model improvement
         * Working with huge imbalance samples in classification problem
         * Graphical analysis of data
         * Performing a full stack of data analysis procedures (get & clean data, evaluate and tune analysis, present results)
         * Preparing a documentation framework
         * Automation of analysis and preparation of DA scripts sets
         * Data cleaning pipeline with advanced techniques
-        * Communicating with customer.
+        * Communicating with the customer.
     
     * Toolbox & frameworks:
     
@@ -148,9 +148,9 @@ March 2016 - March 2017
         * Development of integrated Data Analysis automatic reporting module
         * Data-driven research for future project’s needs
         * Maintain the documentation on database design
-        * Reporting on unusual data behaviour and incorrect data usage
+        * Reporting on unusual data behavior and incorrect data usage
         * Constantly checking the correctness of data flow and integration
-        * Communicating with customer.
+        * Communicating with the customer.
     
     * Toolbox & frameworks:
     
@@ -170,7 +170,7 @@ January 2016- March 2016
         
         * Communications with customer
         * Text mining using Regular Expressions
-        * Text-specific patterns recognition.
+        * Text-specific pattern recognition.
     
     * Toolbox & frameworks:
     
@@ -252,7 +252,7 @@ Skills
 * What I love to do:
 
      * Tuning a model after initial experiment is done and you know the direction
-     * Communications on task statement aaaaand brainstormings!
+     * Communications on task statements aaaaand brainstormings!
      * Data preparation for analysis, especially the cleaning and tidying part
      * Data pipelines design, model deployment
      * Documentation for reproducibility
